@@ -33,7 +33,7 @@
  \usepackage[T1]{fontenc}
   \usepackage{graphicx}
   \usepackage[Lenny]{fncychap}
-  \usepackage{ydrop}
+  \usepackage{lettrine}
   \newcommand{\sk}{\vspace{0.2 cm}}
   \newcommand{\A}[1]{{$\backslash${\tt #1}}}
   \newcommand{\nsp}{\mbox{\hspace{-1 cm}}}
@@ -44,9 +44,8 @@
 \begin{document}
   \maketitle
   \tableofcontents
-  \setlength{\dropcapsheight}{24pt}
   \chapter{Package description}
-    \drop{T}he package \textsl{fncychap} has been written such that
+    \lettrine{T}{he package} \textsl{fncychap} has been written such that
     chapter level headings can be altered fast and for me to learn more
     about \LaTeX{} and \TeX{}. I have no idea if this package is
     written in a good way. Thus, if anyone reads and tries {\em
@@ -88,7 +87,7 @@
     distribution will be invoked.
     
   \chapter{Commands provided}
-  \drop{A} part from the chapter styles, some additional commands are
+  \lettrine{A}{part from the chapter styles}, some additional commands are
   provided in order to create user defined chapter heads. The commands
   will in the sequel be described. Each command is boxed and placed on
   a separate line. Lets begin the descriptions of the commands.\sk\\ 
@@ -132,8 +131,7 @@
     \mbox{\A{ChNameVar}\{\A{huge}\A{rm}\A{centering}\}}.
     \enlargethispage{1cm}
   \chapter{An overview of the chapter styles}
-  \setlength{\dropcapsheight}{28pt}
-    \drop{T}he chapter styles have default settings for all of the functions
+    \lettrine{T}{he chapter styles} have default settings for all of the functions
     described in section~\ref{sec:TW}. However, it can be changed
     using the commands. Note that if \A{centering}, etc is used to
     format the text part of the chapter style then the result can be
@@ -278,7 +276,7 @@ MikTeX) differs from dvips in that the gray box become
 foreground. Thus, the chapter number is partly hidden. 
 \enlargethispage{2cm}
   \chapter{A simple example}
-    \drop{I}f the pre defined styles does not fulfill your needs then you can
+    \lettrine{I}{f the pre-defined styles} do not fulfill your needs then you can
     modify the formating routines. The formatting is controlled by
     three commands. One might as well redefine the original
     chapter definitions using the \A{secdef} and \A{renewcommand}, see
@@ -337,8 +335,7 @@ foreground. Thus, the chapter number is partly hidden.
     \A{TheAlphaChapter}. This can be done by initially chose the style
     {\em Bjarne}\/ and then redefine \A{DOCH}, \A{DOTI} and \A{DOTIS}.
     \chapter{Revision details}
-
-     \drop{T}his is version 1.34, some minor problems have been
+     \lettrine{T}{his is version 1.34}, some minor problems have been
      addressed and two new predefined chapter heads have been
      incorporated. The upper case and lower case handling have been
      corrected. A bad behavior in changes between \verb+\frontmatter+,
