@@ -149,8 +149,8 @@
     \section{The chapter Sonny}
     The following settings have been used as default parameters
     {\small\begin{verbatim}  
-      \ChNameVar{\Large\sf}  \ChNumVar{\Huge}  \ChTitleVar{\Large\sf}
-      \ChRuleWidth{0.5pt}    \ChNameUpperCase
+      \ChNameVar{\Large\sffamily} \ChTitleVar{\Large\sffamily}
+      \ChNumVar{\Huge} \ChRuleWidth{0.5pt} \ChNameUpperCase
     \end{verbatim}}    
     \begin{figure}[h]
       \begin{minipage}{7 cm}
@@ -171,7 +171,7 @@
     {\small\begin{verbatim}
       \ChNameVar{\fontsize{14}{16}\usefont{OT1}{phv}{m}{n}\selectfont}
       \ChNumVar{\fontsize{60}{62}\usefont{OT1}{ptm}{m}{n}\selectfont}
-      \ChTitleVar{\Huge\bfseries\rm},  \ChRuleWidth{1pt}
+      \ChTitleVar{\Huge\bfseries\rmfamily} \ChRuleWidth{1pt}
     \end{verbatim}}
     \begin{figure}[h]
       \begin{minipage}{7 cm}
@@ -190,8 +190,9 @@ entitled \textsl{PetersLenny}.
     \section{The chapter Glenn}
     The following settings have been used as default parameters
     {\small\begin{verbatim}
-      \ChNameVar{\bfseries\Large\sf},  \ChNumVar{\Huge},  \ChTitleVar{\bfseries\Large\rm}, 
-      \ChRuleWidth{1pt},               \ChNameUpperCase,  \ChTitleUpperCase
+      \ChNameVar{\bfseries\Large\sffamily} \ChNameUpperCase
+      \ChTitleVar{\bfseries\Large\rmfamily} \ChTitleUpperCase
+      \ChNumVar{\Huge} \ChRuleWidth{1pt}
     \end{verbatim}}
     \begin{figure}[h]
       \begin{minipage}{7 cm}
@@ -207,8 +208,9 @@ entitled \textsl{PetersLenny}.
     \section{The chapter Conny}
     The following settings have been used as default parameters
     {\small\begin{verbatim}
-       \ChNameUpperCase     \ChTitleUpperCase    \ChNameVar{\centering\Huge\rm\bfseries}
-       \ChNumVar{\Huge}     \ChRuleWidth{2pt}    \ChTitleVar{\centering\Huge\rm}
+       \ChNameUpperCase \ChNameVar{\centering\Huge\rmfamily\bfseries}
+       \ChTitleUpperCase \ChTitleVar{\centering\Huge\rmfamily}
+       \ChNumVar{\Huge} \ChRuleWidth{2pt}
     \end{verbatim}}
     \begin{figure}[h]
       \begin{minipage}{7 cm}
@@ -224,8 +226,9 @@ entitled \textsl{PetersLenny}.
     \section{The chapter Rejne}
     The following settings have been used as default parameters\\
     {\small\begin{verbatim}  
-      \ChNameVar{\centering\Huge\rm\bfseries}, \ChNumVar{\Huge},  \ChTitleVar{\centering\Huge\rm}
-      \ChNameUpperCase,                        \ChTitleUpperCase, \ChRuleWidth{1pt}
+      \ChNameUpperCase \ChNameVar{\centering\Huge\rmfamily\bfseries}
+      \ChTitleUpperCase \ChTitleVar{\centering\Huge\rmfamily}
+      \ChNumVar{\Huge} \ChRuleWidth{1pt}
    \end{verbatim}}
     \begin{figure}[h]
       \begin{minipage}{7 cm}
@@ -240,8 +243,10 @@ entitled \textsl{PetersLenny}.
     \section{The chapter Bjarne}
     The following settings have been used as default parameters\\
     {\small\begin{verbatim}
-  \ChNameUpperCase   \ChNameVar{\raggedleft\normalsize\rm}   \ChRuleWidth{1pt}
-  \ChTitleUpperCase  \ChNumVar{\raggedleft \bfseries\Large}  \ChTitleVar{\raggedleft \Large\rm}
+  \ChNameUpperCase \ChTitleUpperCase \ChRuleWidth{1pt}
+  \ChNameVar{\raggedleft\normalsize\rmfamily}
+  \ChNumVar{\raggedleft\bfseries\Large}
+  \ChTitleVar{\raggedleft\Large\rmfamily}
      \end{verbatim}}
     \begin{figure}[h]
       \begin{minipage}{7 cm}
@@ -259,7 +264,6 @@ entitled \textsl{PetersLenny}.
     {\small\begin{verbatim}
   \ChNumVar{\fontsize{76}{80}\usefont{OT1}{pzc}{m}{n}\selectfont}
   \ChTitleVar{\raggedleft\Large\sffamily\bfseries}
-  
      \end{verbatim}}
     \begin{figure}[h]
       \begin{minipage}{7 cm}
@@ -309,9 +313,9 @@ foreground. Thus, the chapter number is partly hidden.
     \A{ChRuleWidth}. Try this example at a computer near you.
     \begin{verbatim}
        \makeatletter
-         \ChNameVar{\Large\rm}    % sets the style for name
+         \ChNameVar{\Large\rmfamily}    % sets the style for name
          \ChNumVar{\Huge}         % sets the style for digit
-         \ChTitleVar{\Large\rm\centering}   % sets the style for title
+         \ChTitleVar{\Large\rmfamily\centering}   % sets the style for title
          \ChRuleWidth{4pt}        % Set RW=4pt
          \ChNameUpperCase         % Make name uppercase
          \renewcommand{\DOCH}{%
