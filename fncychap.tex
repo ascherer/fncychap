@@ -294,11 +294,9 @@ foreground. Thus, the chapter number is partly hidden.
     note that \A{RW} is special, since it is set by \A{ChRuleWidth}.
     The formatting controlled by \A{ChNameVar}, \A{ChNumVar} and
     \A{ChTitleVar} store their values in \A{CNV}, \A{CNoV} and \A{CTV}
-    respectively. Finally, The functions
-    \A{FmN}\texttt{\textbraceleft~\textbraceright} and
-    \A{FmTi}\texttt{\textbraceleft~\textbraceright} acts accordingly
-    to \A{Ch***AsIs}, \A{Ch***UpperCase} and
-    \A{Ch***LowerCase}. Note that the stars indicate appropriate
+    respectively. Finally, the functions \A{FmN}\verb+{ }+ and
+    \A{FmTi}\verb+{ }+ acts accordingly to \A{Ch***AsIs}, \A{Ch***UpperCase}
+    and \A{Ch***LowerCase}. Note that the stars indicate appropriate
     substitution of text, see section~\ref{sec:TW}.
 
     To illustrate this lets define a new chapter style in which the
@@ -342,8 +340,8 @@ foreground. Thus, the chapter number is partly hidden.
 
      In version 1.33 Rejne definition streched text caused ugly gaps
      in the vrule aligned with the title text. A compatibility problem
-     with the KOMA class 'scrbook.cls' the remedy is a redefinition of
-     '\@schapter' in line with that used in KOMA. This might not be
+     with the KOMA class `\verb+scrbook.cls+' the remedy is a redefinition of
+     `\verb+\@schapter+' in line with that used in KOMA. This might not be
      good since it differs from the base definition. A spell error was
      corrected.
  
