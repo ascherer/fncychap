@@ -23,6 +23,7 @@
   \usepackage{graphicx}
   \usepackage[Lenny]{fncychap}
   \usepackage{lettrine}
+  \usepackage[colorlinks,linkcolor=black]{hyperref}
 
   \newcommand{\sk}{\vspace{0.2 cm}}
   \newcommand{\A}[1]{{\texttt{\textbackslash #1}}}
@@ -33,7 +34,9 @@
   \date{}
   
 \begin{document}
+  \hypersetup{pageanchor=false}
   \maketitle
+  \hypersetup{pageanchor=true}
   \tableofcontents
   \chapter{Package description}
     \lettrine{T}{he package} \textsl{fncychap} has been written such that
