@@ -24,7 +24,7 @@
   \usepackage[Lenny]{fncychap}
   \usepackage{lettrine}
   \newcommand{\sk}{\vspace{0.2 cm}}
-  \newcommand{\A}[1]{{$\backslash${\tt #1}}}
+  \newcommand{\A}[1]{{$\backslash$\texttt{#1}}}
   \newcommand{\nsp}{\mbox{\hspace{-1 cm}}}
   \title{FncyChap V1.34}
   \author{Ulf A. Lindgren}
@@ -67,11 +67,11 @@
     and each appendix (up to Z). The second chapter head is a new one
     defined by Jean-Marc Francois and he named it \textsl{Bjornstrup}.
 
-    Originally, \textsl{fncychap} did not rely on any other package. However, for the
-    style {\tt Lenny} a postscript font is default, but this font can
-    easily be changed. I encourage the use of the default postscript
-    font since it is scalable in a truly huge manner, which makes
-    {\em Lenny} nice. In the current release and with the use of
+    Originally, \textsl{fncychap} did not rely on any other package.
+    However, for the style {\em Lenny} a postscript font is default,
+    but this font can easily be changed. I encourage the use of the
+    default postscript font since it is scalable in a truly huge manner,
+    which makes {\em Lenny} nice. In the current release and with the use of
     Jean-Marcs \textsl{Bjornstrup} the color package from the base
     distribution will be invoked.
     
@@ -365,8 +365,7 @@ foreground. Thus, the chapter number is partly hidden.
       received some feedback, informing me that the \LaTeX{} base have
       to be post 1994/12/01.  This information has been included in
       the package such that if an old base is used a warning will be
-      written into the {\tt
-        log}.
+      written into the~\texttt{log}.
 
       \section*{Release history:}
       \begin{description}
