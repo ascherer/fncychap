@@ -24,7 +24,7 @@
   \usepackage[Lenny]{fncychap}
   \usepackage{lettrine}
   \newcommand{\sk}{\vspace{0.2 cm}}
-  \newcommand{\A}[1]{{$\backslash$\texttt{#1}}}
+  \newcommand{\A}[1]{{\texttt{\textbackslash #1}}}
   \newcommand{\nsp}{\mbox{\hspace{-1 cm}}}
   \title{FncyChap V1.34}
   \author{Ulf A. Lindgren}
@@ -49,7 +49,8 @@
     \section{Basic use and requirements}
     The package is invoked by writing the following in the preamble of
     your document\sk\\
-    \nsp\fbox{\A{usepackage}[{\em style}]\{{\em fncychap}\}}\sk\\
+    \nsp\fbox{\A{usepackage}\texttt{[}{\em style}\texttt{]\textbraceleft}{\em
+    fncychap}\texttt{\textbraceright}}\sk\\
     If the option, {\em style}, is omitted then the default definition
     of chapter is used. Originally, there were six predefined chapter styles,
     namely {\em Sonny, Lenny, Glenn, Conny, Rejne} and {\em Bjarne}.
@@ -80,7 +81,8 @@
   provided in order to create user defined chapter heads. The commands
   will in the sequel be described. Each command is boxed and placed on
   a separate line. Lets begin the descriptions of the commands.\sk\\ 
-  \nsp\fbox{\A{mghrulefill}\{{\em width}\}}\sk\\
+  \nsp\fbox{\A{mghrulefill}\texttt{\textbraceleft}{\em
+  width}\texttt{\textbraceright}}\sk\\
   The above command is a more general version of the command
   \A{hrulefill} in the sense that the width of the ruler can be
   specified. This command is provided in order to decorate the chapter
@@ -109,15 +111,18 @@
       \A{ChNameAsIs}}\sk\\
     The rule width of the predefined chapter styles can be controlled
     by the command\sk\\
-    \nsp\fbox{\A{ChRuleWidth}\{{\em width}\}}\sk\\
+    \nsp\fbox{\A{ChRuleWidth}\texttt{\textbraceleft}{\em
+    width}\texttt{\textbraceright}}\sk\\
     just remember that the {\em width} must have a unit, for instance
     {\em pt, mm, etc}. The font related matters such as size, type and
     face can be sent using the commands\sk\\
-    \nsp\fbox{\A{ChNameVar}\{{\em stuff}\}, \A{ChNumVar}\{{\em stuff}\} and
-      \A{ChTitleVar}\{{\em stuff}\}}\sk\\
+    \nsp\fbox{\A{ChNameVar}\texttt{\textbraceleft}{\em stuff}\texttt{\textbraceright},
+      \A{ChNumVar}\texttt{\textbraceleft}{\em stuff}\texttt{\textbraceright} and
+      \A{ChTitleVar}\texttt{\textbraceleft}{\em stuff}\texttt{\textbraceright}}\sk\\
     related to the chapter name number and title respectively.
     The argument, {\em stuff}, to these functions can be for example
-    \mbox{\A{ChNameVar}\{\A{huge}\A{rmfamily}\A{centering}\}}.
+    \mbox{\A{ChNameVar}\texttt{\textbraceleft}\A{huge}\A{rmfamily}\A{centering}%
+    \texttt{\textbraceright}}.
     \enlargethispage{1cm}
   \chapter{An overview of the chapter styles}
     \lettrine{T}{he chapter styles} have default settings for all of the functions
@@ -276,9 +281,9 @@ foreground. Thus, the chapter number is partly hidden.
     package I decided that this was easier. The command\sk\\
     \nsp\fbox{\A{DOCH}}\sk\\
     formats the chapter name and number. The commands\sk\\
-    \nsp\fbox{\A{DOTI}\{{\#1}\}}\sk\\
+    \nsp\fbox{\A{DOTI}\texttt{\textbraceleft}{\#1}\texttt{\textbraceright}}\sk\\
     and\sk\\
-    \nsp\fbox{\A{DOTIS}\{{\#1}\}}\sk\\
+    \nsp\fbox{\A{DOTIS}\texttt{\textbraceleft}{\#1}\texttt{\textbraceright}}\sk\\
     formats the chapter title for \A{chapter} and \A{chapter*} respectively.
     In order to modify these you will have to use the preamble along
     with the commands \A{makeatletter} and \A{makeatother}. The in
@@ -289,8 +294,10 @@ foreground. Thus, the chapter number is partly hidden.
     note that \A{RW} is special, since it is set by \A{ChRuleWidth}.
     The formatting controlled by \A{ChNameVar}, \A{ChNumVar} and
     \A{ChTitleVar} store their values in \A{CNV}, \A{CNoV} and \A{CTV}
-    respectively. Finally, The functions \A{FmN}\{ \} and \A{FmTi}\{
-    \} acts accordingly to \A{Ch***AsIs}, \A{Ch***UpperCase} and
+    respectively. Finally, The functions
+    \A{FmN}\texttt{\textbraceleft~\textbraceright} and
+    \A{FmTi}\texttt{\textbraceleft~\textbraceright} acts accordingly
+    to \A{Ch***AsIs}, \A{Ch***UpperCase} and
     \A{Ch***LowerCase}. Note that the stars indicate appropriate
     substitution of text, see section~\ref{sec:TW}.
 
