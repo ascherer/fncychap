@@ -23,9 +23,11 @@
   \usepackage{graphicx}
   \usepackage[Lenny]{fncychap}
   \usepackage{lettrine}
+
   \newcommand{\sk}{\vspace{0.2 cm}}
   \newcommand{\A}[1]{{\texttt{\textbackslash #1}}}
   \newcommand{\nsp}{\mbox{\hspace{-1 cm}}}
+
   \title{FncyChap V1.34}
   \author{Ulf A. Lindgren}
   \date{}
@@ -39,7 +41,7 @@
     about \LaTeX{} and \TeX{}. I have no idea if this package is
     written in a good way. Thus, if anyone reads and tries {\em
     FncyChap} I would appreciate any feedback. This will help me gain
-  insight in writing macros. 
+    insight in writing macros.
     
     In any publication it is important to remember that consistency
     plays an important role. That is, with this package one can change
@@ -54,25 +56,24 @@
     If the option, {\em style}, is omitted then the default definition
     of chapter is used. Originally, there were six predefined chapter styles,
     namely {\em Sonny, Lenny, Glenn, Conny, Rejne} and {\em Bjarne}.
-    The names corresponds to Swedish given names, almost surely (a.s.)
-    like
+    The names corresponds to Swedish given names, almost surely (a.s.) like
     IKEA\footnote{reg.~trademark of Ingvar Kamprad Emtaryd
     Agunnaryd}. Each such style has a default configuration and if
     that configuration is sufficient, then this is all that is needed.
     
     In the present release of \textsl{fncychap} two additional chapter
     definitions have been included. The first of these is named {\em
-      PetersLenny}, after the author Peter Osborn. This chapter
-    definition is based on {\em Lenny}, Peter has carefully tweaked
-    the measures of the lines, individually, for each chapter number (up to 20)
+    PetersLenny}, after the author Peter Osborn. This chapter
+    definition is based on {\em Lenny}, Peter has carefully tweaked the
+    measures of the lines, individually, for each chapter number (up to 20)
     and each appendix (up to Z). The second chapter head is a new one
     defined by Jean-Marc Francois and he named it \textsl{Bjornstrup}.
 
     Originally, \textsl{fncychap} did not rely on any other package.
-    However, for the style {\em Lenny} a postscript font is default,
-    but this font can easily be changed. I encourage the use of the
-    default postscript font since it is scalable in a truly huge manner,
-    which makes {\em Lenny} nice. In the current release and with the use of
+    However, for the style {\em Lenny} a postscript font is default, but
+    this font can easily be changed. I encourage the use of the default
+    postscript font since it is scalable in a truly huge manner, which
+    makes {\em Lenny} nice. In the current release and with the use of
     Jean-Marcs \textsl{Bjornstrup} the color package from the base
     distribution will be invoked.
     
@@ -123,7 +124,7 @@
     The argument, {\em stuff}, to these functions can be for example
     \mbox{\A{ChNameVar}\texttt{\textbraceleft}\A{huge}\A{rmfamily}\A{centering}%
     \texttt{\textbraceright}}.
-    \enlargethispage{1cm}
+
   \chapter{An overview of the chapter styles}
     \lettrine{T}{he chapter styles} have default settings for all of the functions
     described in section~\ref{sec:TW}. However, it can be changed
@@ -135,11 +136,11 @@
     This command will write the chapter number using the corresponding
     word. \A{TheAlphaChapter} have a capability of writing the words
     {\em ZERO} to {\em NINETYNINE}.
-    
 
     In the following sections the pre-defined styles are shown along
     with the default settings. Both the \A{chapter} and \A{chapter*}
     are given.
+
     \section{The chapter Sonny}
     The following settings have been used as default parameters
     {\small\begin{verbatim}  
@@ -159,7 +160,6 @@
       \end{minipage}\hfill
     \end{figure}    
     
-% \clearpage
     \section{The chapter Lenny}
     The following settings have been used as default parameters
     {\small\begin{verbatim}
@@ -179,7 +179,6 @@
     \end{figure}
 \textbf{Note:} An alternative version of this chapter head exist
 entitled \textsl{PetersLenny}.
-%\enlargethispage{2cm}
 
     \section{The chapter Glenn}
     The following settings have been used as default parameters
@@ -234,6 +233,7 @@ entitled \textsl{PetersLenny}.
         \caption{The chapter style Rejne}
       \end{minipage}\hfill
     \end{figure}
+
     \section{The chapter Bjarne}
     The following settings have been used as default parameters
     {\small\begin{verbatim}
@@ -271,11 +271,11 @@ entitled \textsl{PetersLenny}.
 \textbf{Note:} It appears as if the rendering in YAP (dvi previewer in
 MikTeX) differs from dvips in that the gray box become
 foreground. Thus, the chapter number is partly hidden. 
-\enlargethispage{2cm}
+
   \chapter{A simple example}
-    \lettrine{I}{f the pre-defined styles} do not fulfill your needs then you can
-    modify the formating routines. The formatting is controlled by
-    three commands. One might as well redefine the original
+    \lettrine{I}{f the pre-defined styles} do not fulfill your needs
+    then you can modify the formating routines. The formatting is
+    controlled by three commands. One might as well redefine the original
     chapter definitions using the \A{secdef} and \A{renewcommand}, see
     The \LaTeX{} companion. However, at the time of creating this
     package I decided that this was easier. The command\sk\\
@@ -331,6 +331,7 @@ foreground. Thus, the chapter number is partly hidden.
     not a good idea. Suppose that you want to use the
     \A{TheAlphaChapter}. This can be done by initially chose the style
     {\em Bjarne}\/ and then redefine \A{DOCH}, \A{DOTI} and \A{DOTIS}.
+
     \chapter{Revision details}
      \lettrine{T}{his is version 1.34}, some minor problems have been
      addressed and two new predefined chapter heads have been
@@ -389,17 +390,4 @@ foreground. Thus, the chapter number is partly hidden.
 %%% mode: latex
 %%% TeX-master: t
 %%% End: 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
