@@ -15,5 +15,5 @@ but I have not received feedback from him.
 
 If _you_ find anything noteworthy in this code, feel free to open an issue
 a/o pull request. Do _not_ bother Ulf Lindgren with my work (yet). It's
-for hin to decide if he wants to use this stuff in a future release.
+for him to decide if he wants to use this stuff in a future release.
 
