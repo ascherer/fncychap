@@ -9,8 +9,9 @@ committing the horrendous crime of using oldstyle `\rm`, `\sf`, and `\tt`
 font selectors in several of its _style_ definitions.
 
 After fixing the macros [in the obvious
-way](5c5d5ab81a57177430a6f76cf6ebef1f17d0501b), I also applied some spit and
-polish to the package documentation, which I used for detailed tests.
+way](https://github.com/ascherer/fncychap/commit/5c5d5ab81a57177430a6f76cf6ebef1f17d0501b),
+I also applied some spit and polish to the package documentation, which I used
+for detailed tests.
 
 The creator of [the `fncychap` package](https://ctan.org/pkg/fncychap) has been
 notified of this project, but I have not received feedback from him.
