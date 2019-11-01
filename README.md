@@ -20,3 +20,19 @@ If _you_ find anything noteworthy in this code, feel free to open an issue a/o
 pull request. Please, do _not_ bother Ulf Lindgren with my work (yet). It's for
 him to decide if he wants to use this stuff in a future release.
 
+## Resolution
+
+In the end I purged `fncychap.sty` from my application completely and replaced
+it with this simple set of KOMA-related macros:
+```
+\setkomafont{chapter}{\normalfont\Huge}
+
+\renewcommand{\hrulefill}[1]{\leavevmode\leaders\hrule\@height#1\hfill\kern\z@}
+\renewcommand\chapterlinesformat[3]{%
+  \parbox[b]{\textwidth}{\hrulefill{2pt}#2}\par%
+  \centerline{\MakeUppercase{#3}}\par}
+\RedeclareSectionCommand[afterskip=6\baselineskip,
+  beforeskip=3\baselineskip]{chapter}
+```
+This recreates the layout in my two texts quite faithfully.
+
